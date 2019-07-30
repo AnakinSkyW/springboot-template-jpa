@@ -1,7 +1,5 @@
 package com.anakin.generator.exception;
 
-import com.anakin.generator.enums.CodeMsg;
-
 /**
  * Description: custom exception
  * User: AnakinSkyW

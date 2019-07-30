@@ -1,13 +1,16 @@
 package com.anakin.generator.entity;
+
 import lombok.Data;
-import javax.persistence.*;
+
 import java.io.Serializable;
 
+import javax.persistence.*;
+
 /**
- * Description: user_info entity
- * User: JPA AUTO
- * Date: Thu Jul 18 22:19:01 CST 2019
- **/
+ *@description: UserInfo Entity
+ *@author: JPA AUTO
+ *@date: Tue Jul 30 22:19:12 CST 2019
+ */
 @Data
 @Entity
 @Table(name = "user_info")
