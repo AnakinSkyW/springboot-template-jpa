@@ -1,0 +1,59 @@
+spring:
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate:
+        format_sql: false
+        use_sql_comments: true
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+    username: root
+    password: yujie888
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      maximum-pool-size: 10
+      max-lifetime: 30000
+      pool-name: hikari_pool
+      minimum-idle: 5
+      idle-timeout: 1800000
+      auto-commit: true
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    serialization:
+      write-dates-as-timestamps: true
+  cache:
+    type: redis
+    redis:
+      time-to-live: 20000ms
+      cache-null-values: false
+  redis:
+    host: localhost
+    port: 6379
+    password: 952231
+    timeout: 10000ms
+    database: 0
+    lettuce:
+      pool:
+        min-idle: 0
+        max-active: 8
+        max-idle: 8
+        max-wait: 1ms
+logbook:
+  format:
+    style: http
+  filter:
+    enabled: true
+  strategy: body-only-if-status-at-least
+  minimum-status: 0
+  write:
+    chunk-size: 1000

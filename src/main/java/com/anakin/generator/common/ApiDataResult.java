@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 
 /**
  * @description: 返回响应体
- * @author: yujie
+ * @author: anakin
  * @date 2019/4/24 10:43
  */
 @NoArgsConstructor
@@ -22,7 +22,7 @@ public class ApiDataResult<T> extends ApiResult {
     @ApiModelProperty(value = "返回数据")
     private T data;
 
-    public ApiDataResult(String code, String message, T data) {
+    public ApiDataResult(int code, String message, T data) {
         this.code = code;
         this.message = message;
         this.data = data;

@@ -1,6 +1,6 @@
 package com.anakin.generator.repository.impl;
 
-import com.anakin.generator.repository.UserInfoRepositoryCustom;
+import com.anakin.generator.repository.StudentRepositoryCustom;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
@@ -9,10 +9,10 @@ import javax.persistence.PersistenceContext;
 /**
  *@description: Repository Impl Method
  *@author: JPA AUTO
- *@date: Thu Jul 18 21:58:23 CST 2019
+ *@date: Wed Mar 03 13:59:23 CST 2021
  */
 @Repository
-public class UserInfoRepositoryImpl implements UserInfoRepositoryCustom {
+public class StudentRepositoryImpl implements StudentRepositoryCustom {
 
 	@PersistenceContext
 	private EntityManager entityManager;

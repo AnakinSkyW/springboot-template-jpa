@@ -3,8 +3,8 @@ package com.anakin.generator.repository;
 /**
  *@description: Repository Method
  *@author: JPA AUTO
- *@date: Tue Jul 30 22:24:15 CST 2019
+ *@date: Wed Mar 03 13:59:23 CST 2021
  */
-public interface OrgInfoRepositoryCustom {
+public interface StudentRepositoryCustom {
 
 }

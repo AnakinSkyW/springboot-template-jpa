@@ -13,7 +13,7 @@ import java.util.List;
 
 /**
  * @description: 返回结果工具集
- * @author: yujie
+ * @author: anakin
  * @date 2019/4/24 10:54
  */
 public class ResultUtil {
@@ -25,7 +25,7 @@ public class ResultUtil {
      * @param message 消息
      * @return
      */
-    public static ApiResult response(String code, String message) {
+    public static ApiResult response(int code, String message) {
         return new ApiResult(code, message);
     }
 
@@ -48,7 +48,7 @@ public class ResultUtil {
      * @param <T>     返回数据类型
      * @return
      */
-    public static <T> ApiDataResult<T> response(String code, String message, T data) {
+    public static <T> ApiDataResult<T> response(int code, String message, T data) {
         return new ApiDataResult<>(code, message, data);
     }
 

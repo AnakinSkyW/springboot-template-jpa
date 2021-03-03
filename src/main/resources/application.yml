@@ -1,1 +1,7 @@
-
+spring:
+  application:
+    name: spring-base-jpa
+  profiles:
+    active: test
+server:
+  port: 8080
