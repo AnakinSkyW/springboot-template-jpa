@@ -13,5 +13,4 @@ import javax.persistence.PersistenceContext;
  */
 @Repository
 public class StudentRepositoryImpl implements StudentRepositoryCustom {
-
 }
