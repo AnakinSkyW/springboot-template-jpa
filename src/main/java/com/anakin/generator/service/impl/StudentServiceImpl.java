@@ -1,7 +1,7 @@
 package com.anakin.generator.service.impl;
 
-import com.anakin.generator.enums.CodeMsg;
-import com.anakin.generator.exception.CommonException;
+import com.anakin.common.tool.enums.CodeMsg;
+import com.anakin.common.tool.exception.CommonException;
 import com.anakin.generator.repository.StudentRepository;
 import com.anakin.generator.service.StudentService;
 import com.anakin.generator.model.cvt.StudentConvert;
@@ -10,7 +10,7 @@ import com.anakin.generator.model.vo.StudentVO;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
-import com.anakin.generator.common.VOPage;
+import com.anakin.common.tool.result.VOPage;
 import javax.annotation.Resource;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
 /**
  *@description: Student service impl
  *@author: JPA AUTO
- *@date: Wed Mar 03 18:02:23 CST 2021
+ *@date: Fri Mar 05 16:00:00 CST 2021
  */
 @Service
 public class StudentServiceImpl implements StudentService {

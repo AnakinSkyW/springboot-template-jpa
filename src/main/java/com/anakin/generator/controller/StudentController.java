@@ -3,15 +3,15 @@ package com.anakin.generator.controller;
 import com.anakin.generator.model.dto.StudentDTO;
 import com.anakin.generator.model.vo.StudentVO;
 import com.anakin.generator.service.StudentService;
-import com.anakin.generator.common.ApiDataResult;
-import com.anakin.generator.common.ApiResult;
-import com.anakin.generator.enums.CodeMsg;
-import com.anakin.generator.util.ResultUtil;
+import com.anakin.common.tool.result.ApiDataResult;
+import com.anakin.common.tool.result.ApiResult;
+import com.anakin.common.tool.enums.CodeMsg;
+import com.anakin.common.tool.result.ResultUtil;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import com.anakin.generator.common.VOPage;
+import com.anakin.common.tool.result.VOPage;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,7 +20,7 @@ import java.util.List;
 /**
  * @description: Student Controller
  * @author: JPA AUTO
- * @date Wed Mar 03 18:02:23 CST 2021
+ * @date Fri Mar 05 16:00:00 CST 2021
  */
 @Slf4j
 @Api(tags = "Student Controller")

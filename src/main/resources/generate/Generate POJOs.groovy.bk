@@ -305,7 +305,7 @@ def genService(out, table, entityName, fields, basePackage) {
     out.println "import ${basePackage}.model.dto.${entityName}DTO;"
     out.println "import ${basePackage}.model.vo.${entityName}VO;"
     out.println "import java.util.List;"
-    out.println "import com.anakin.generator.common.VOPage;"
+    out.println "import com.anakin.common.tool.result.VOPage;"
     out.println ""
     out.println"/**"
     out.println" *@description: ${entityName} service"
@@ -354,8 +354,8 @@ def genService(out, table, entityName, fields, basePackage) {
 def genServiceImpl(out, table, entityName, fields, basePackage) {
     out.println "package ${basePackage}.service.impl;"
     out.println ""
-    out.println "import ${basePackage}.enums.CodeMsg;"
-    out.println "import ${basePackage}.exception.CommonException;"
+    out.println "import com.anakin.common.tool.enums.CodeMsg;"
+    out.println "import com.anakin.common.tool.exception.CommonException;"
     out.println "import ${basePackage}.repository.${entityName}Repository;"
     out.println "import ${basePackage}.service.${entityName}Service;"
     //out.println "import ${basePackage}.entity.$entityName;"
@@ -368,7 +368,7 @@ def genServiceImpl(out, table, entityName, fields, basePackage) {
     out.println "import org.springframework.data.domain.Example;"
     out.println "import org.springframework.data.domain.PageRequest;"
     out.println "import org.springframework.stereotype.Service;"
-    out.println "import com.anakin.generator.common.VOPage;"
+    out.println "import com.anakin.common.tool.result.VOPage;"
     out.println "import javax.annotation.Resource;"
     out.println "import java.util.List;"
     out.println "import java.util.stream.Collectors;"
@@ -436,15 +436,15 @@ def genController(out, table, entityName, fields, basePackage) {
             "import ${basePackage}.model.dto.${entityName}DTO;\n" +
             "import ${basePackage}.model.vo.${entityName}VO;\n" +
             "import ${basePackage}.service.${entityName}Service;\n" +
-            "import com.anakin.generator.common.ApiDataResult;\n" +
-            "import com.anakin.generator.common.ApiResult;\n" +
-            "import com.anakin.generator.enums.CodeMsg;\n" +
-            "import com.anakin.generator.util.ResultUtil;\n" +
+            "import com.anakin.common.tool.result.ApiDataResult;\n" +
+            "import com.anakin.common.tool.result.ApiResult;\n" +
+            "import com.anakin.common.tool.enums.CodeMsg;\n" +
+            "import com.anakin.common.tool.result.ResultUtil;\n" +
             "import io.swagger.annotations.Api;\n" +
             "import io.swagger.annotations.ApiOperation;\n" +
             "import lombok.extern.slf4j.Slf4j;\n" +
             "import org.springframework.beans.factory.annotation.Autowired;\n" +
-            "import com.anakin.generator.common.VOPage;\n" +
+            "import com.anakin.common.tool.result.VOPage;\n" +
             "import org.springframework.validation.annotation.Validated;\n" +
             "import org.springframework.web.bind.annotation.*;\n" +
             "\n" +

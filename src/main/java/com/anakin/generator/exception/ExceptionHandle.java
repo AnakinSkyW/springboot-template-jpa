@@ -1,8 +1,9 @@
 package com.anakin.generator.exception;
 
-import com.anakin.generator.common.ApiResult;
-import com.anakin.generator.enums.CodeMsg;
-import com.anakin.generator.util.ResultUtil;
+import com.anakin.common.tool.exception.CommonException;
+import com.anakin.common.tool.result.ApiResult;
+import com.anakin.common.tool.enums.CodeMsg;
+import com.anakin.common.tool.result.ResultUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.annotation.Order;
 import org.springframework.validation.BindException;

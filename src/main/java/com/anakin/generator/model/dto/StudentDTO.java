@@ -10,7 +10,7 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  *@description: 学生 DTO
  *@author: JPA AUTO
- *@date: Wed Mar 03 18:02:23 CST 2021
+ *@date: Fri Mar 05 16:00:00 CST 2021
  */
 @Data
 @ToString

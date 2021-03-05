@@ -3,12 +3,12 @@ package com.anakin.generator.service;
 import com.anakin.generator.model.dto.StudentDTO;
 import com.anakin.generator.model.vo.StudentVO;
 import java.util.List;
-import com.anakin.generator.common.VOPage;
+import com.anakin.common.tool.result.VOPage;
 
 /**
  *@description: Student service
  *@author: JPA AUTO
- *@date: Wed Mar 03 18:02:23 CST 2021
+ *@date: Fri Mar 05 16:00:00 CST 2021
  */
 public interface StudentService {
 

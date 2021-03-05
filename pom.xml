@@ -65,13 +65,6 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-
-        <!-- https://mvnrepository.com/artifact/cn.hutool/hutool-all -->
-        <dependency>
-            <groupId>cn.hutool</groupId>
-            <artifactId>hutool-all</artifactId>
-            <version>5.5.9</version>
-        </dependency>
         <dependency>
             <groupId>com.querydsl</groupId>
             <artifactId>querydsl-apt</artifactId>
@@ -116,7 +109,11 @@
             <artifactId>logbook-spring-boot-starter</artifactId>
             <version>2.5.0</version>
         </dependency>
-
+        <dependency>
+            <groupId>com.anakin</groupId>
+            <artifactId>common-tool</artifactId>
+            <version>1.0</version>
+        </dependency>
     </dependencies>
 
 <!--    <build>-->

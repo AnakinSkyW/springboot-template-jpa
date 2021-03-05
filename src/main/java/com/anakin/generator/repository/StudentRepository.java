@@ -10,7 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 /**
  *@description: Repository Method
  *@author: JPA AUTO
- *@date: Wed Mar 03 18:02:23 CST 2021
+ *@date: Fri Mar 05 16:00:00 CST 2021
  */
 public interface StudentRepository extends JpaRepository<Student, Integer>, 
 		QuerydslPredicateExecutor<Student> {
